@@ -1,0 +1,11 @@
+<div class="input-group" style="margin: 0 0 30px 650px;">
+    <div class="input-group-prepend">
+        <span class="input-group-text">Search</span>
+        
+    </div>
+    <input  (input)=getEnt($event) type="search" name="search" id="search" style="width: 500px; height: 50px;" placeholder="Search by movie name" >
+</div>
+<div class="col-md-4 float-left mt-6 mb-7 card card-body "  *ngFor='let new of entr'>
+    <a href="{{new.website}}"><img src="{{new.Poster}}" alt="" style="height: 400px;"></a>
+    <h1 style="height: 200px;">{{new.Title}}</h1>
+  </div>

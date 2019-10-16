@@ -1,0 +1,34 @@
+<div class="col-md-4 offset-4 mt-4 mb-4">
+    <form action="" [formGroup]="form" (ngSubmit)="loginData(form)">
+        <h1 class="text-center text-white bg-warning">Reactive Form</h1>
+        <div class="form-group">
+            <input type="text" name="text" id="text" class="form-control" placeholder="Add Movie" formControlName="text">
+            <div *ngIf="text.touched && text.invalid">
+                <p *ngIf="text.errors.required" class="alert alert-danger">*this field is required</p>
+                <p *ngIf="text.errors.unique" class="alert alert-danger">*Moviename already exist</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" name="title" id="title" class="form-control" placeholder="Movie Title" formControlName="title">
+            <div *ngIf="title.touched && title.invalid">
+                    <p *ngIf="title.errors.required" class="alert alert-danger">*this field is required</p>
+                </div>
+        </div>
+        <div class="form-group">
+            <input type="url" name="url" id="url" class="form-control" placeholder="Movie imgurl" formControlName="url">
+            <div *ngIf="url.touched && url.invalid">
+                    <p *ngIf="url.errors.required" class="alert alert-danger">*this field is required</p>
+                </div>
+        </div>
+        <div class="form-group">
+            <textarea name="desc" id="desc" cols="59" rows="10" placeholder="Movie description"formControlName="desc"></textarea>
+            <div *ngIf="desc.touched && desc.invalid">
+                    <p *ngIf="desc.errors.required" class="alert alert-danger">*this field is required</p>
+                </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-outline-success float-right" [disabled]="form.invalid">Add</button>
+        </div>
+    </form>
+</div>
+
