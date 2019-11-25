@@ -1,0 +1,25 @@
+table ,th, td{
+border: 1px solid black;
+/* border-collapse: collapse; */
+padding: 20px;
+font-size: 20px;
+border-radius: 30px;
+}
+table{
+    width:60%;
+}
+th{
+    background-color: crimson;
+}
+tr:nth-child(even){
+    background-color: chartreuse;
+}
+tr:nth-child(odd){
+    background-color:green;
+}
+td:hover{
+    background-color: darkmagenta;
+    color: yellow;
+    cursor: pointer;
+}
+

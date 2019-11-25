@@ -1,0 +1,14 @@
+img{
+    height: 300px;
+    width: 250px;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    box-shadow: 10px 10px 25px crimson;
+    transition: all 2s;
+}
+img:hover{
+    transform: scale(1.2,1.2);
+}

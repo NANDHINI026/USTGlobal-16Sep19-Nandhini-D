@@ -1,0 +1,28 @@
+<form class="col-md-4 offset mt-5 card card-body" #form = "ngForm" (ngSubmit)="loginData(form)">
+        <div class="form-group">
+            <input type="text" name="text" id="text" class="form-control" placeholder="Product Name" #text = "ngModel" ngModel required>
+         <div *ngIf= "text.touched && text.invalid">
+             <p  class="alert alert-danger" *ngIf="text.errors.required">*This field is required</p>
+         </div>
+        </div>
+        <div class="form-group">
+            <input type="number" name="number" id="number" class="form-control" placeholder="Product Age" #number = "ngModel" ngModel required>
+         <div *ngIf= "number.touched && number.invalid">
+             <p  class="alert alert-danger" *ngIf="number.errors.required">*This field is required</p>
+        </div>
+        </div>
+        <div class="form-group">
+                <input type="text" name="description" id="description" class="form-control" placeholder="Product Description" #description = "ngModel" ngModel required>
+             <div *ngIf= "text.touched && number.invalid">
+                 <p  class="alert alert-danger" *ngIf="number.errors.required">*This field is required</p>
+            </div>
+            </div>
+            <div class="form-group">
+                    <input type="url" name="url" id="url" class="form-control" placeholder="Product ImageUrl" #url = "ngModel" ngModel required>
+                 <div *ngIf= "url.touched && number.invalid">
+                     <p  class="alert alert-danger" *ngIf="number.errors.required">*This field is required</p>
+                </div>
+                </div>
+            
+    
+        

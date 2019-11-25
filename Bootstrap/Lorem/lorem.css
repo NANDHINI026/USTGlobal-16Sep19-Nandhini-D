@@ -1,0 +1,258 @@
+.fa-disabled{
+    opacity:0.4;
+    margin-left: 165px;
+  }
+  #content{
+    text-align:center;
+  }
+  #content1{
+    text-align:center;
+  }
+  #content2{
+    text-align:center;
+  }
+  .card{
+    box-shadow: 5px 5px 2px grey;
+  }
+  #header{
+      width: 100%;
+      height:40px;
+      position: absolute;
+      top: 5px;
+      background-color: black;
+  }
+  #top{
+    position: absolute;
+    top: 1px;
+    left:400px;
+    color:white;
+    font-size:25px;
+    text-decoration: none; 
+  }
+  #work{
+    position: absolute;
+    top: 1px;
+    left:500px;
+    color:white;
+    font-size:25px;
+    text-decoration: none; 
+  }
+  #portfolio{
+    position: absolute;
+    top: 1px;
+    left:600px;
+    color:white;
+    font-size:25px;
+    text-decoration: none; 
+  }
+  #contact{
+    position: absolute;
+    top: 1px;
+    left:750px;
+    color:white;
+    font-size:25px;
+    text-decoration: none; 
+  }
+  #img with text{
+      top:30px;
+      position: absolute;
+      width: 100%;
+      height:300px;
+  }
+  .image{
+      border-radius: 50%;
+      top:70px;
+      left:100px;
+      position: absolute;
+      width: 400px;
+      height:400px;
+  }
+  .hi{
+    top:95px;
+    left:650px;
+    position: absolute;
+    font-size: 40px;
+    color: black;
+
+}
+.shreya{
+    top:90px;
+    left:770px;
+    position: absolute;
+    font-size: 45px;
+    font-weight: bold;
+    color:black;
+
+}
+.AJ{
+  top:200px;
+  left:550px;
+  position: absolute;
+  font-size: 25px;
+  color:black;
+}
+#button{
+  top:300px;
+  left:550px;
+  position: absolute;
+  width: 325px;
+  height: 70px;
+  border: 1px solid black;
+  font-size: 25px;
+  font-weight: bold;
+}
+.stuff{
+  top:550px;
+  position: absolute;
+  left: 450px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.consequat{
+  top:625px;
+  position: absolute;
+  left: 350px;
+  font-size: 25px;
+}
+#icon-header{
+      position: absolute;
+      top:700px;
+  }
+  .consequat1{
+    top:960px;
+    position: absolute;
+    left: 400px;
+    font-size: 20px;
+  }
+  #button1{
+    top:1020px;
+    left:500px;
+    position: absolute;
+    width: 400px;
+    height: 70px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .stuff1{
+    top:1150px;
+    position: absolute;
+    left: 400px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .consequat2{
+    top:1220px;
+    position: absolute;
+    left: 300px;
+    font-size: 25px;
+  }
+  #icon-header1{
+    position: absolute;
+    top:1300px;
+}
+#icon-header2{
+  position: absolute;
+  top:1700px;
+}
+.image1
+{
+  width: 428px;
+  height: 250px;
+}
+.consequat3{
+  top:2080px;
+  position: absolute;
+  left: 350px;
+  font-size: 25px;
+}
+#button2{
+  top:2150px;
+  left:420px;
+  position: absolute;
+  width: 400px;
+  height: 70px;
+  border: 1px solid black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#stuff2{
+  top:2280px;
+  width: 100%;
+  position: absolute;
+  font-size: 35px;
+  font-weight: bold;
+  color:white;
+  text-align: center;
+  background-color: black;
+}
+#consequat4{
+  top:2322px;
+  position: absolute;
+  width: 100%;
+  font-size: 25px;
+  color:white;
+  text-align: center;
+  background-color: black;
+}
+#consequat5{
+  top:2333px;
+  position: absolute;
+}
+.form-row{
+  margin-top: 2352px;
+}
+#btn1{
+  margin-left: 350px;
+}
+#btn2{
+  margin-left: 370px;
+}
+.find{
+  top:2630px;
+  left:550px;
+  position: absolute;
+  font-size: 35px;
+  font-weight: bold;
+  color:white;
+}
+#envelope{
+  top:2710px;
+  left:550px;
+  position: absolute;
+}
+#google{
+  top:2710px;
+  left:585px;
+  position: absolute;
+}
+#twitter{
+  top:2710px;
+  left:620px;
+  position: absolute;
+}
+#facebook{
+  top:2710px;
+  left:655px;
+  position: absolute;
+}
+#linkedin{
+  top:2710px;
+  left:690px;
+  position: absolute;
+}
+#insta{
+  top:2710px;
+  left:725px;
+  position: absolute;
+}
+#nandhini{
+  background-color:black;
+  height: 420px;
+}
+
+
+
+
+

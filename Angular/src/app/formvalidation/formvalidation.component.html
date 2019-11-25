@@ -1,0 +1,38 @@
+<form class="col-md-4 offset mt-5 card card-body" #form = "ngForm" (ngSubmit)="loginData(form)">
+        <div class="form-group">
+            <input type="text" name="text" id="text" class="form-control" placeholder="Company Name" #text = "ngModel" ngModel required>
+         <div *ngIf= "text.touched && text.invalid">
+             <p  class="alert alert-danger" *ngIf="text.errors.required">*This field is required</p>
+         </div>
+        </div>
+        <div>
+            <select name="skill" id="skill" class="col-md-6">
+                <option value="1">Skills</option>
+                <option value="2">JAVA</option>
+                <option value="3">PYTHON</option>
+                <option value="4">C</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="number" name="number" id="number" class="form-control" placeholder="Year of Exp" #number = "ngModel" ngModel required>
+         <div *ngIf= "number.touched && number.invalid">
+             <p  class="alert alert-danger" *ngIf="number.errors.required">*This field is required</p>
+        </div>
+        </div>
+        <div class="form-group">
+            <input type="text" name="mctc" id="mctc" class="form-control" placeholder="MCTC" #mctc = "ngModel" ngModel required>
+            <div *ngIf= "text.touched && text.invalid">
+                <p  class="alert alert-danger" *ngIf="text.errors.required">*This field is required</p>
+            </div>
+         </div>
+         <div class="form-group">
+                <input type="text" name="location" id="location" class="form-control" placeholder="Location" #location = "ngModel" ngModel required>
+                <div *ngIf= "text.touched && text.invalid">
+                    <p  class="alert alert-danger" *ngIf="text.errors.required">*This field is required</p>
+                </div>
+             </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-outline-success float-right" [disabled]="form.invalid">Add User</button>
+        </div>
+    </form>
+    
