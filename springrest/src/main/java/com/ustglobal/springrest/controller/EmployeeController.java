@@ -60,8 +60,8 @@ public class EmployeeController {
 			response.setMessage("success");
 			response.setDescription("Data deleted from  the DB");
 		}else {
-			response.setStatusCode(201);
-			response.setMessage("success");
+			response.setStatusCode(401);
+			response.setMessage("failure");
 			response.setDescription("Data not deleted from the DB");
 		}
 		return response;
@@ -72,15 +72,15 @@ public class EmployeeController {
 		EmployeeResponse response = new EmployeeResponse();
 		EmployeeBean bean=service.getEmployee(id);
 		
-		if(service.deleteEmployee(id)) {
+		if(bean!=null) {
 			response.setStatusCode(201);
 			response.setMessage("success");
-			response.setDescription("Data deleted from  the DB");
+			response.setDescription("Data found in  the DB");
 			response.setEmployeeBeans(Arrays.asList(bean));
 		}else {
-			response.setStatusCode(201);
+			response.setStatusCode(401);
 			response.setMessage("success");
-			response.setDescription("Data not deleted from the DB");
+			response.setDescription("Data not found in the DB");
 		}
 		return response;
 	}//end of getEmployee
@@ -92,12 +92,12 @@ public class EmployeeController {
 		if(!beans.isEmpty()) {
 			response.setStatusCode(201);
 			response.setMessage("success");
-			response.setDescription("Data deleted from  the DB");
+			response.setDescription("Data got from  the DB");
 			response.setEmployeeBeans(beans);
 		}else {
 			response.setStatusCode(201);
 			response.setMessage("success");
-			response.setDescription("Data not deleted from the DB");
+			response.setDescription("Data not found from the DB");
 		}
 		return response;
 	}//end of getAllEmployee

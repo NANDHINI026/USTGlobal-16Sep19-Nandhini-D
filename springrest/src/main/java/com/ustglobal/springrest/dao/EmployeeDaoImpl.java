@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 
 import com.ustglobal.springrest.dto.EmployeeBean;
 
-@Repository
+@Repository //the class provides the mechanism for storage,retrieval,search,update,delete operation on objects.it is specialization of the @Component
 public class EmployeeDaoImpl implements EmployeeDAO{
 	
 	@PersistenceUnit
@@ -25,7 +25,7 @@ public class EmployeeDaoImpl implements EmployeeDAO{
 		
 		try {
 			transaction.begin();
-			manager.persist(bean);
+			manager.persist(bean);// to store the data under particular db
 			transaction.commit();
 			return true;
 		} catch (Exception e) {
