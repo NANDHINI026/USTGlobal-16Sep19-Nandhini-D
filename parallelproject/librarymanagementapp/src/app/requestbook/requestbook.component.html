@@ -1,0 +1,22 @@
+<form class="col-md-4 offset-4 mt-5 card card-body" #form="ngForm" (ngSubmit)="request(form)">
+    <div class="card-header">
+        <h3 style="color:fuchsia">Login here</h3>
+    </div>
+    <div class="form-group">
+        <input type="number" name="id" id="id" class="form-control" placeholder="Enter user id"
+            #id="ngModel" ngModel required>
+        <div *ngIf="id.touched && id.invalid">
+            <p class="alert alert-danger" *ngIf="id.errors.required">*This field is required</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="number" name="bookId" id="bookId" class="form-control" placeholder="Enter book id"
+            #bookId="ngModel" ngModel required>
+        <div *ngIf="bookId.touched && bookId.invalid">
+            <p class="alert alert-danger" *ngIf="bookId.errors.required">*This field is required</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-outline-success float-right" [disabled]="form.invalid">Request</button>
+    </div>
+</form>

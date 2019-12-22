@@ -1,0 +1,40 @@
+<div class="col-md-4 offset-4 mt-5 card card-body">
+  <input class="form-control" type="search" placeholder="search" name="search"[(ngModel)]='search'>
+</div>
+<div style="background:gainsboro">
+    <div class="card  text-black">
+      <div class="card-img-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+  
+              <div class="container ">
+                <table class="table table-bordered table-striped table-dark table-hover mt-2 mb-5 col-md-10 offset-1 " style="border-style: solid; border-width: 1px;">
+                  <thead class="thead-dark">
+                    <tr class="text-center text-light">
+                      <th>Book ID</th>
+                      <th>Book Name</th>
+                      <th>Author1</th>
+                      <th>Author2</th>
+                      <th>Publisher</th>
+                      <th>Year Of Publication</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="text-light" *ngFor='let book of books | filter: search' >
+                      <td>{{book.bookId}}</td>
+                      <td>{{book.bookName}}</td>
+                      <td>{{book.author1}}</td>
+                      <td>{{book.author2}}</td>
+                      <td>{{book.publisher}}</td>
+                      <td>{{book.yearOfPublication}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,116 @@
+<div class="col-md-4 offset-4 mt-5">
+  <input class="form-control" type="search" placeholder="search" name="search" [(ngModel)]='search'>
+</div>
+<div style="background:gainsboro">
+  <div class="card  text-black">
+    <div class="card-img-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+
+            <div class="container ">
+              <table class="table table-bordered mt-2 table-hover " style="border-style: solid; border-width: 1px;">
+                <thead>
+                  <tr class="text-center text-dark">
+                    <th>Book ID</th>
+                    <th>Book Name</th>
+                    <th>Author1</th>
+                    <th>Author2</th>
+                    <th>Publisher</th>
+                    <th>Year Of Publication</th>
+                    <th>Delete</th>
+                    <th>Edit Book</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor='let book of books | filter: search'>
+                    <td>{{book.bookId}}</td>
+                    <td>{{book.bookName}}</td>
+                    <td>{{book.author1}}</td>
+                    <td>{{book.author2}}</td>
+                    <td>{{book.publisher}}</td>
+                    <td>{{book.yearOfPublication}}</td>
+                    <td><button class="btn btn-danger" (click)="deleteBook(book)">Delete</button></td>
+                    <td>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                        (click)="selectUser(book)">
+                        Edit
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Update Book Here</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <form class="col-md-10 offset-1 mt-5 card card-body" #form="ngForm"
+                              (ngSubmit)="updateData(form)">
+                              <div class="form-group">
+                                <input type="text" name="bookName" id="bookName" class="form-control"
+                                  placeholder="Enter Book Name" #bookName="ngModel" ngModel required
+                                  [(ngModel)]="selectedUser.bookName">
+                                <div *ngIf="bookName.touched && bookName.invalid">
+                                  <p class="alert alert-danger" *ngIf="bookName.errors.required">*This field is required
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <input type="text" name="author1" id="author1" class="form-control"
+                                  placeholder="Enter Author name" #author1="ngModel" ngModel required
+                                  [(ngModel)]="selectedUser.author1">
+                                <div *ngIf="author1.touched && author1.invalid">
+                                  <p class="alert alert-danger" *ngIf="author1.errors.required">*This field is required
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <input type="text" name="author2" id="author2" class="form-control"
+                                  placeholder="Enter Author name" #author2="ngModel" ngModel required
+                                  [(ngModel)]="selectedUser.author2">
+                                <div *ngIf="author2.touched && author2.invalid">
+                                  <p class="alert alert-danger" *ngIf="author2.errors.required">*This field is required
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <input type="text" name="publisher" id="publisher" class="form-control"
+                                  placeholder="publisher" #publisher="ngModel" ngModel required
+                                  [(ngModel)]="selectedUser.publisher">
+                                <div *ngIf="publisher.touched && publisher.invalid">
+                                  <p class="alert alert-danger" *ngIf="publisher.errors.required">*This field is
+                                    required</p>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <input type="date" name="yearOfPublication" id="yearOfPublication" class="form-control"
+                                  placeholder="Year of publication" #yearOfPublication="ngModel" ngModel required
+                                  [(ngModel)]="selectedUser.yearOfPublication">
+                                <div *ngIf="yearOfPublication.touched && yearOfPublication.invalid">
+                                  <p class="alert alert-danger" *ngIf="yearOfPublications.errors.required">*This field
+                                    is required</p>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <button type="submit" class="btn btn-outline-success float-right"
+                                  [disabled]="form.invalid">Update</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
