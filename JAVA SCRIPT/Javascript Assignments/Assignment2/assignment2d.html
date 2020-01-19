@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function circumference(radius)
+        {
+            console.log('Circumference of radius'+" "+radius+"="+2*(Math.PI)*radius);
+        }
+        circumference(2);
+        console.log('===========================');
+        var value=function(radius)
+        {
+            console.log('Circumference of radius'+" "+radius+"="+2*(Math.PI)*radius);
+        }
+        value(4);
+        console.log('===========================');
+        (function(radius)
+        {
+            console.log('Circumference of radius'+" "+radius+"="+2*(Math.PI)*radius);
+        })
+        (6);
+        console.log('===========================');
+        var div=(radius)=>
+        {
+            console.log('Circumference of radius'+" "+radius+"="+2*(Math.PI)*radius);
+        }
+        div(8);
+        console.log('===========================');
+    </script>
+</body>
+</html>

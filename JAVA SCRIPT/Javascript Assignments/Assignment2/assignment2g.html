@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = [10,20,30,40];
+        function add()
+        {
+            var sum=0;
+            for(var i=0;i<a.length;i++)
+            {
+             sum=sum+a[i];
+            }
+            console.log(sum);
+        }
+        add();
+        console.log('===========================');
+        var a = [10,20,30,40];
+        var value=  function()
+        {
+            var sum=0;
+            for(var i=0;i<a.length;i++)
+            {
+             sum=sum+a[i];
+            }
+            console.log(sum);
+        }
+        value();
+        console.log('===========================');
+        var a = [10,20,30,40];
+        (function()
+        {
+            var sum=0;
+            for(var i=0;i<a.length;i++)
+            {
+             sum=sum+a[i];
+            }
+            console.log(sum);
+        })
+        ();
+        console.log('===========================');
+        var a = [10,20,30,40];
+      var div = ()=>
+        {
+            var sum=0;
+            for(var i=0;i<a.length;i++)
+            {
+             sum=sum+a[i];
+            }
+            console.log(sum);
+        }
+        div();
+    </script>
+</body>
+</html>

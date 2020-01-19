@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function prime(num)
+        {
+            var flag=1;
+            for(var i=2;i<=num/2;i++)
+            {
+                if(num%i==0)
+                flag=0;
+            }
+            if(flag==1)
+            console.log('The given numbers'+' '+num+'isprime');
+            else
+            console.log('The given numbers'+' '+num+'is not prime');
+        }
+        prime(5);
+        console.log('===========================');
+        var value=function(num)
+        {
+            var flag=1;
+            for(var i=2;i<=num/2;i++)
+            {
+                if(num%i==0)
+                flag=0;
+            }
+            if(flag==1)
+            console.log('The given numbers'+' '+num+'isprime');
+            else
+            console.log('The given numbers'+' '+num+'is not prime');
+        }
+        value(6);
+        console.log('===========================');
+        (function(num)
+        {
+            var flag=1;
+            for(var i=2;i<=num/2;i++)
+            {
+                if(num%i==0)
+                flag=0;
+            }
+            if(flag==1)
+            console.log('The given numbers'+' '+num+'isprime');
+            else
+            console.log('The given numbers'+' '+num+'is not prime');
+        })
+        (7);
+        console.log('===========================');
+        var div=(num)=>
+        {
+            var flag=1;
+            for(var i=2;i<=num/2;i++)
+            {
+                if(num%i==0)
+                flag=0;
+            }
+            if(flag==1)
+            console.log('The given numbers'+' '+num+'isprime');
+            else
+            console.log('The given numbers'+' '+num+'is not prime');
+        }
+        div(4);
+        console.log('===========================');
+        
+    </script>
+</body>
+</html>

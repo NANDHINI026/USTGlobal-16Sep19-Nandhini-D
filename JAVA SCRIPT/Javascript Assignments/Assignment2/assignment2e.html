@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fibonacci(num)
+        {
+            var a=0,b=1;
+            console.log('fibonacci series of'+" "+num+'is');
+            console.log(a);
+            console.log(b);
+            for(var i=2;i<=num;i++)
+            {
+            c=a+b;
+            a=b;
+            b=c;
+            console.log(c);
+            }
+        }
+        fibonacci(7)
+        console.log('===========================');
+       var value= function(num)
+        {
+            var a=0,b=1;
+            console.log('fibonacci series of'+" "+num+'is');
+            console.log(a);
+            console.log(b);
+            for(var i=2;i<=num;i++)
+            {
+            c=a+b;
+            a=b;
+            b=c;
+            console.log(c);
+            }
+        }
+        value(4)
+        console.log('===========================');
+       (function(num)
+        {
+            var a=0,b=1;
+            console.log('fibonacci series of'+" "+num+'is');
+            console.log(a);
+            console.log(b);
+            for(var i=2;i<=num;i++)
+            {
+            c=a+b;
+            a=b;
+            b=c;
+            console.log(c);
+            }
+        })
+        (12);
+        console.log('===========================');
+       var div=(num)=>
+        {
+            var a=0,b=1;
+            console.log('fibonacci series of'+" "+num+'is');
+            console.log(a);
+            console.log(b);
+            for(var i=2;i<=num;i++)
+            {
+            c=a+b;
+            a=b;
+            b=c;
+            console.log(c);
+            }
+        }
+        div(10);
+        console.log('===========================');
+    </script>
+</body>
+</html>
